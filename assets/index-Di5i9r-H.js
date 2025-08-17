@@ -2,7 +2,7 @@
     <header class="w-full h-22 bg-gradient-to-r text-white from-blue to-dark-blue font-gilroy font-bold text-base">
       <div class="w-full h-full mx-auto px-80 flex items-center justify-between ">
         <div class="h-14 mr-23.5 shrink-0">
-          <img src="/logo.svg" alt="ТРИУМФ" class="h-full w-full">
+          <img src="./logo.svg" alt="ТРИУМФ" class="h-full w-full">
         </div>
         
         <nav class="h-full flex items-center justify-center gap-16 mr-20">
@@ -14,7 +14,7 @@
         
         <div class="flex">
           <span class="mr-20 text-base flex items-center">
-          <img src="/phone.svg" alt="phone" class="w-5 h-5 mr-2">
+                      <img src="./phone.svg" alt="phone" class="w-5 h-5 mr-2">
           +7 (495) 22-595-77
           </span>
 
@@ -63,7 +63,7 @@
             <li>
               <div class="w-86 h-125 bg-white rounded-3xl px-9 py-6 shadow-md shadow-[#D0D9F6] flex flex-col items-center justify-between">
                 <div class="size-29 bg-gradient-to-b from-[#0039A4] to-[#227AC4] rounded-2xl flex items-center justify-center mb-13.5">
-                  <img src="/smile.svg" alt="" />
+                  <img src="./smile.svg" alt="" />
                 </div>
           
               <p class="font-medium text-xl text-text">
@@ -74,7 +74,7 @@
             <li>
               <div class="w-86 h-125 bg-white rounded-3xl px-9 py-6 shadow-md shadow-[#D0D9F6] flex flex-col items-center justify-between">
                 <div class="size-29 bg-gradient-to-b from-[#0039A4] to-[#227AC4] rounded-2xl flex items-center justify-center mb-13.5">
-                  <img src="/smile.svg" alt="" />
+                  <img src="./smile.svg" alt="" />
                 </div>
           
               <p class="font-medium text-xl text-text">
@@ -85,7 +85,7 @@
             <li>
               <div class="w-86 h-125 bg-white rounded-3xl px-9 py-6 shadow-md shadow-[#D0D9F6] flex flex-col items-center justify-between">
                 <div class="size-29 bg-gradient-to-b from-[#0039A4] to-[#227AC4] rounded-2xl flex items-center justify-center mb-13.5">
-                  <img src="/smile.svg" alt="" />
+                  <img src="./smile.svg" alt="" />
                 </div>
           
               <p class="font-medium text-xl text-text">
@@ -96,7 +96,7 @@
             <li>
               <div class="w-86 h-125 bg-white rounded-3xl px-9 py-6 shadow-md shadow-[#D0D9F6] flex flex-col items-center justify-between">
                 <div class="size-29 bg-gradient-to-b from-[#0039A4] to-[#227AC4] rounded-2xl flex items-center justify-center mb-13.5">
-                  <img src="/smile.svg" alt="" />
+                  <img src="./smile.svg" alt="" />
                 </div>
           
               <p class="font-medium text-xl text-text">
@@ -282,7 +282,7 @@
           <!-- Левая колонка - Логотип и адрес -->
           <div class="flex flex-col items-start space-y-4">
             <div class="flex items-center">
-              <img src="/logo.svg" alt="ТРИУМФ">
+              <img src="./logo.svg" alt="ТРИУМФ">
             </div>
             <address class="text-sm/2 not-italic ">
               Адрес: Москва, <br></br> Ленинская Слобода, <br></br> д. 19, 62/1
