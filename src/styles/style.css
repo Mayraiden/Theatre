@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+@import './fonts.css';
+
+@theme {
+	--color-blue: #013ba5;
+	--color-light-blue: #f1f3f9;
+	--color-dark-blue: #001d73;
+	--color-text: #242930;
+	--color-dark-text: #001527;
+
+	--font-gilroy: 'Gilroy';
+}
+
+body {
+	font-family: var(--font-gilroy);
+	max-width: 100vw;
+	overflow-x: hidden;
+}
