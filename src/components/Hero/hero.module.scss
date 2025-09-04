@@ -1,0 +1,55 @@
+@use '../../Styles/functions' as *;
+
+.hero {
+	max-width: 100vw;
+	max-height: 100dvh;
+	// background-image: url('/heroBg1.jpg');
+	// background-size: cover;
+	// background-position: center center;
+	// background-repeat: no-repeat;
+}
+
+// Плавное сжатие для разных размеров экрана
+@media (max-width: 1920px) {
+	.hero {
+	}
+}
+
+@media (max-width: 1600px) {
+	.hero {
+	}
+}
+
+@media (max-width: 1400px) {
+	.hero {
+		margin-top: rem(-90); // Поднимаем на высоту Header'а
+	}
+}
+
+@media (max-width: 1200px) {
+	.hero {
+	}
+}
+
+@media (max-width: 1024px) {
+	.hero {
+	}
+}
+
+@media (max-width: 770px) {
+	.hero {
+		// background: url('/HeroSmall.png');
+		// background-size: cover;
+		// background-position: center;
+		// background-repeat: no-repeat;
+		// background-position: center 5%;
+		// height: 100dvh;
+	}
+}
+
+@media (max-width: 480px) {
+	.hero {
+		// background-position: center 0%;
+		// background-size: 135% auto;
+	}
+}

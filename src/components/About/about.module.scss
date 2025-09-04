@@ -1,0 +1,270 @@
+@use '../../Styles/functions' as *;
+@use '../../Styles/mixins.scss' as *;
+.about {
+	padding-top: rem(115);
+	background: #f1f3f9;
+
+	&__container {
+		max-width: rem(1320);
+		padding-inline: rem(40);
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		margin-bottom: rem(98);
+	}
+
+	&__content {
+		color: #001527;
+		font-weight: 500;
+	}
+
+	&__title {
+		font-weight: bold;
+		font-size: rem(32);
+		margin-bottom: rem(30);
+	}
+}
+
+.video {
+	width: rem(570);
+	height: rem(382);
+	margin-right: rem(57);
+	flex-shrink: 0;
+	background: #dce1f3;
+	border-radius: 33px;
+}
+
+.about__photos {
+	display: none; // Скрываем на десктопе по умолчанию
+}
+
+.cards {
+	position: relative;
+	z-index: 10;
+
+	&__container {
+		padding-inline: rem(250);
+	}
+
+	&__line {
+		position: absolute;
+		left: 0;
+		top: 33%;
+		height: rem(3);
+		width: 100vw;
+		background: #ff8812;
+		z-index: -2;
+	}
+
+	&__list {
+		display: flex;
+		gap: 10px;
+	}
+
+	&__item {
+		width: rem(345);
+		height: rem(500);
+		padding-inline: rem(26);
+		padding-block: rem(24);
+		font-weight: 500;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #001527;
+		background: #f1f3f9;
+		border-radius: rem(34);
+		box-shadow:
+			0 8px 25px -8px rgba(0, 0, 0, 0.15),
+			0 4px 15px -4px rgba(0, 0, 0, 0.1);
+	}
+
+	&__iconWrap {
+		width: rem(118);
+		height: rem(118);
+		margin-bottom: rem(54);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: rem(34);
+		background: #0039a4;
+	}
+
+	&__icon {
+	}
+}
+
+@media (max-width: 1400px) {
+	.cards {
+		&__container {
+			padding-inline: rem(100);
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.cards {
+		&__list {
+			flex-direction: column;
+			width: 100%;
+		}
+
+		&__item {
+			width: 100%;
+			height: rem(300);
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&__iconWrap {
+			margin-bottom: 0;
+			margin-right: rem(60);
+			flex-shrink: 0;
+		}
+	}
+}
+
+@media (max-width: 1025px) {
+	.about {
+		&__container {
+			flex-direction: column;
+			gap: rem(80);
+		}
+	}
+
+	.video {
+		margin-right: 0;
+	}
+}
+@media (max-width: 490px) {
+	.about {
+		color: #f1f3f9;
+		padding-top: 0;
+		background: linear-gradient(180deg, #010008 0%, #000c29 50%, #001554 100%);
+
+		&__container {
+			flex-direction: column;
+			padding: 0;
+			gap: 0;
+			background: transparent;
+		}
+
+		&__content {
+			color: #f1f3f9;
+			width: 100%;
+			padding-inline: rem(40);
+			padding-top: rem(40);
+			padding-bottom: rem(40);
+			order: 1;
+		}
+
+		&__title {
+			color: #f1f3f9;
+			margin-bottom: rem(20);
+		}
+
+		&__descr {
+			color: #f1f3f9;
+			margin-bottom: rem(16);
+			line-height: 1.5;
+		}
+	}
+
+	.video {
+		order: 2;
+		width: rem(370);
+		height: rem(200);
+		border-radius: rem(16);
+		background: #dce1f3;
+		margin: 0 auto;
+	}
+
+	.about__photos {
+		order: 3;
+		display: grid !important; // Показываем на мобильных
+		grid-template-columns: 1fr 1fr;
+		gap: rem(12);
+		padding: rem(20);
+		justify-content: center;
+		justify-items: center;
+	}
+
+	.about__photo {
+		width: rem(180);
+		height: rem(120);
+		background: #dce1f3;
+		border-radius: rem(12);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.about__photoText {
+		color: #001527;
+		font-size: rem(12);
+		font-weight: 500;
+	}
+
+	.cards {
+		order: 4;
+		background: white;
+		padding: rem(40) rem(20);
+		border-radius: rem(20) rem(20) 0 0;
+
+		&__line {
+			@include hide;
+		}
+
+		&__container {
+			padding-inline: 0;
+		}
+
+		&__list {
+			flex-direction: column;
+			gap: rem(20);
+		}
+
+		&__item {
+			width: 100%;
+			height: auto;
+			padding: rem(20);
+			display: grid;
+			grid-template-columns: rem(60) 1fr;
+			grid-template-areas: 'icon text';
+			gap: rem(16);
+			align-items: center;
+			background: white;
+			border-radius: rem(16);
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		&__item_left {
+			// Иконка слева (по умолчанию)
+		}
+
+		&__item_right {
+			grid-template-columns: 1fr rem(60);
+			grid-template-areas: 'text icon';
+		}
+
+		&__iconWrap {
+			width: rem(60);
+			height: rem(60);
+			grid-area: icon;
+			border-radius: rem(16);
+			background: linear-gradient(135deg, #0039a4 0%, #001d73 100%);
+		}
+
+		&__icon {
+			width: rem(24);
+			height: rem(24);
+		}
+
+		&__text {
+			color: #001527;
+			font-size: rem(14);
+			line-height: 1.4;
+			grid-area: text;
+		}
+	}
+}
