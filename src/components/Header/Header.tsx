@@ -10,7 +10,7 @@ export const Header = () => {
 				<div className={styles.header__logo}>
 					<a href="#" aria-label="Главная страница ТРИУМФ - Продюсерский центр">
 						<Image
-							src="/logo.svg"
+							src="./logo.svg"
 							alt="Логотип ТРИУМФ - Продюсерский центр"
 							width="200"
 							height="100"

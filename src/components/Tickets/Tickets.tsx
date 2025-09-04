@@ -58,9 +58,9 @@ export const Tickets = () => {
 					</div>
 
 					<div className={styles.tickets__right}>
-						<img
-							src="/shariki.png"
-							alt="Шарики"
+												<img 
+							src="./shariki.png" 
+							alt="Шарики" 
 							className={styles.tickets__balloons}
 						/>
 					</div>

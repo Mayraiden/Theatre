@@ -49,7 +49,7 @@ export const About = () => {
 							<div className={styles.cards__iconWrap}>
 								<Image
 									className={styles.cards__icon}
-									src="/smile.svg"
+									src="./smile.svg"
 									alt="."
 									width={40}
 									height={40}
@@ -66,7 +66,7 @@ export const About = () => {
 							<div className={styles.cards__iconWrap}>
 								<Image
 									className={styles.cards__icon}
-									src="/smile.svg"
+									src="./smile.svg"
 									alt="."
 									width={40}
 									height={40}
@@ -84,7 +84,7 @@ export const About = () => {
 							<div className={styles.cards__iconWrap}>
 								<Image
 									className={styles.cards__icon}
-									src="/smile.svg"
+									src="./smile.svg"
 									alt="."
 									width={40}
 									height={40}
@@ -102,7 +102,7 @@ export const About = () => {
 							<div className={styles.cards__iconWrap}>
 								<Image
 									className={styles.cards__icon}
-									src="/smile.svg"
+									src="./smile.svg"
 									alt="."
 									width={40}
 									height={40}
