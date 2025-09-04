@@ -10,7 +10,7 @@ export const Header = () => {
 				<div className={styles.header__logo}>
 					<a href="#" aria-label="Главная страница ТРИУМФ - Продюсерский центр">
 						<Image
-							src="./logo.svg"
+							src="/logo.svg"
 							alt="Логотип ТРИУМФ - Продюсерский центр"
 							width="200"
 							height="100"
@@ -84,7 +84,7 @@ export const Header = () => {
 							onClick={() => {
 								window['YandexTicketsDealer'].push([
 									'getDealer',
-									function (dealer) {
+									function (dealer: { open: (config: { id: string; type: string }) => void }) {
 										dealer.open({
 											id: '95544264-efa2-4d6d-89ad-9e0c8496f39c',
 											type: 'tour',

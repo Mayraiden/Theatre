@@ -1,7 +1,7 @@
 declare global {
 	interface Window {
 		YandexTicketsDealer: {
-			push: (args: any[]) => void
+			push: (args: unknown[]) => void
 			open: () => void
 		}
 	}

@@ -59,7 +59,7 @@ export const Tickets = () => {
 
 					<div className={styles.tickets__right}>
 												<img 
-							src="./shariki.png" 
+							src="/shariki.png" 
 							alt="Шарики" 
 							className={styles.tickets__balloons}
 						/>
